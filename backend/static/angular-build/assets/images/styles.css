@@ -392,7 +392,7 @@ text-decoration: none;
 }
 
 .parallax-promo {
-    background-image: url("/assets/images/cover.jpeg");
+    background-image: url(cover.jpeg);
 }
 
 .parallax {
@@ -411,7 +411,7 @@ text-decoration: none;
     padding-bottom: 40px;
 }
 .section-cat-bg{
-    background: url("/assets/images/bg1.jpg") center center repeat;
+    background: url("bg1.jpg") center center repeat;
 }
 
 .reveal {
@@ -667,10 +667,10 @@ text-decoration: none;
     background: rgba(255, 255, 255, .3)
 }
 .parallax-quote {
-    background-image: url("/assets/images/hireme.jpg");
+    background-image: url(hireme.jpg);
 }
 .parallax-funfactor {
-    background-image: url("/assets/images/hireme.jpg");
+    background-image: url(hireme.jpg);
 
 }
 
@@ -681,10 +681,10 @@ text-decoration: none;
 
 }
 .parallax-promo {
-    background-image: url("/assets/images/hireme.jpg");
+    background-image: url(hireme.jpg);
 }
 .parallax-testimonial {
-    background-image: url("/assets/images/hireme.jpg");
+    background-image: url(hireme.jpg);
 }
 .fun-box i {
     font-size: 40px;
@@ -758,7 +758,12 @@ text-decoration: none;
 .client-item img {
     max-width: 100%
 }
-
+.pattern-bg {
+    width: 100%;
+    height: 100%;
+    background: url(../img/pattern.jpg) center bottom;
+    background-attachment: fixed
+}
 
 .section-gray{
     background: #f3f3f3;
@@ -1274,7 +1279,7 @@ text-decoration: none;
 }
 
 .contact-promo {
-    background-image: url("/static/assets/images/cup4.jpg");
+    background-image: url(cup4.jpg);
 }
 
 .parallax {

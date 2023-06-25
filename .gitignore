@@ -1,0 +1,3 @@
+#ignore site-packages in lib for git ignore
+
+lib

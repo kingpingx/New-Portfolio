@@ -1,5 +1,7 @@
 # New-Portfolio
-This is new Portfolio developed using Angular, Django and hosted on Python Anywhere
+This is new Portfolio developed using Angular and Django.
+
+**[Live demo →](https://angular-portfolio-1o32.onrender.com/)**
 
 ### backend
 # set up env

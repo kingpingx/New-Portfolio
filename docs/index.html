@@ -280,11 +280,8 @@ h1 em{font-style:normal;color:var(--accent)}
 .shot img{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover}
 .fbox{position:absolute;left:28.1%;top:20.9%;width:41.6%;height:41.8%;border:2px solid var(--amber)}
 .fbox span{position:absolute;left:-2px;bottom:100%;padding:4px 6px;background:var(--amber);color:#1A1205;font:600 .6rem/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;white-space:nowrap}
-.lm{position:absolute;width:6px;height:6px;margin:-3px 0 0 -3px;border-radius:50%;background:var(--amber)}
 .portrait:hover .fbox{animation:lock .5s cubic-bezier(.2,.8,.2,1)}
-.portrait:hover .lm{animation:pop .45s .3s cubic-bezier(.2,.8,.2,1) both}
 @keyframes lock{from{transform:scale(1.2);opacity:0}to{transform:none;opacity:1}}
-@keyframes pop{0%{transform:scale(0)}70%{transform:scale(1.8)}100%{transform:scale(1)}}
 .portrait figcaption{padding:10px 12px;font:400 .68rem/1.5 var(--mono);color:var(--screen-dim)}
 .prose p{margin:0 0 18px;max-width:38em;font-size:1.1rem;color:var(--ink-2)}
 .prose p:first-child{color:var(--ink)}
@@ -342,7 +339,7 @@ h1 em{font-style:normal;color:var(--accent)}
 
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
-  .rec::before,.portrait:hover .fbox,.portrait:hover .lm{animation:none}
+  .rec::before,.portrait:hover .fbox{animation:none}
   .btn,.proj,.open span{transition:none}
   .proj:hover{transform:none}
 }
@@ -666,27 +663,22 @@ h1 em{font-style:normal;color:var(--accent)}
         <div class="shot">
           <img src="assets/prabal.jpg" alt="Prabal Pandey" width="600" height="750">
           <div class="fbox" aria-hidden="true"><span>Face 01 · Prabal</span></div>
-          <i class="lm" style="left:39.5%;top:34.3%" aria-hidden="true"></i>
-          <i class="lm" style="left:58.9%;top:34.5%" aria-hidden="true"></i>
-          <i class="lm" style="left:48.9%;top:43.9%" aria-hidden="true"></i>
-          <i class="lm" style="left:41.5%;top:49.5%" aria-hidden="true"></i>
-          <i class="lm" style="left:56.5%;top:49.1%" aria-hidden="true"></i>
         </div>
-        <figcaption>5 landmarks → aligned 112×112 crop → 512-d vector. The same pipeline PhotoGrouper runs.</figcaption>
+        <figcaption>Face detected → aligned 112×112 crop → 512-d vector. The same pipeline PhotoGrouper runs.</figcaption>
       </figure>
       <div>
         <div class="prose">
           <p>I'm a software engineer based in Gurugram. At I2V Systems I build the backend of video surveillance and analytics platforms: the software behind control rooms and city command centres, keeping up with more than a thousand cameras at once.</p>
           <p>I do this work because I like problems that fight back. A queue that needs a restart every morning, or a search that takes thirty seconds, is a puzzle with a clear finish line, and I enjoy finding the one change that makes the whole system fast. I like measuring before and after, which is why most of this page is numbers.</p>
           <p>I studied Software Engineering at Maharshi Dayanand University and graduated with a B.Tech in 2023. In my third year I made the top 8 of the Microsoft Imagine Cup India pre-finals, and I joined I2V before I had even graduated.</p>
-          <p>Outside work I keep building. ThePlayer and PhotoGrouper are the current two, and I write on LinkedIn about what I learn along the way. Away from the screen you'll usually find me playing or watching cricket, planning the next trip, gaming, or with music on.</p>
+          <p>Outside work I keep building. ThePlayer and PhotoGrouper are the current two, and I write on LinkedIn about what I learn along the way. Away from the screen it's usually cricket or table tennis, planning the next trip, gaming, or music.</p>
         </div>
         <ul class="facts">
           <li><b>Based in</b><span>Gurugram, Haryana, India</span></li>
           <li><b>Education</b><span>B.Tech in Software Engineering, Maharshi Dayanand University, 2019–2023</span></li>
           <li><b>Now</b><span>Senior Software Engineer at I2V Systems, mentoring 4 engineers</span></li>
           <li><b>Into</b><ul class="tags"><li>Solving complex problems</li><li>Side projects</li><li>Writing on LinkedIn</li></ul></li>
-          <li><b>Off camera</b><ul class="tags"><li>Cricket</li><li>Travel</li><li>Music</li><li>Gaming</li></ul></li>
+          <li><b>Off camera</b><ul class="tags"><li>Cricket</li><li>Table tennis</li><li>Travel</li><li>Music</li><li>Gaming</li></ul></li>
         </ul>
       </div>
     </div>

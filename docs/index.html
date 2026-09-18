@@ -101,6 +101,13 @@ section[id]{scroll-margin-top:72px}
 .theme{display:inline-grid;place-items:center;width:38px;height:38px;padding:0;border:1px solid var(--line);border-radius:2px;background:transparent;color:var(--ink);cursor:pointer}
 .theme:hover{border-color:var(--ink)}
 .theme svg{width:18px;height:18px}
+.theme .sun{display:none}
+:root[data-theme="dark"] .theme .sun{display:block}
+:root[data-theme="dark"] .theme .moon{display:none}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .theme .sun{display:block}
+  :root:not([data-theme="light"]) .theme .moon{display:none}
+}
 @media (max-width:680px){.nav a:not(.cta){display:none}}
 
 /* Shared type */
@@ -758,8 +765,6 @@ h1 em{font-style:normal;color:var(--accent)}
   }
   function syncThemeIcon() {
     var dark = effectiveTheme() === 'dark';
-    themeBtn.querySelector('.sun').hidden = !dark;
-    themeBtn.querySelector('.moon').hidden = dark;
     var label = dark ? 'Switch to light theme' : 'Switch to dark theme';
     themeBtn.setAttribute('aria-label', label);
     themeBtn.title = label;
